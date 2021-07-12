@@ -5,12 +5,12 @@ export const InputTodo = (props) => {
   return (
     <div class="input-area">
       <input
-        disabled={disabled}
+        disable={disabled}
         placeholder="todo入力"
         value={todoText}
         onChange={onChange}
       />
-      <button disabled={disabled} onClick={onClick}>
+      <button disable={disabled} onClick={onClick}>
         追加
       </button>
     </div>
