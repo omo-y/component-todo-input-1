@@ -55,10 +55,14 @@ const App = () => {
         onChange={onChangetodoText}
         onClick={onClickAdd}
       />
+      {incompleteTodos.lenght >= 5 && (
+        <p style={{ color: "red" }}>登録TodoはMAX5 Todo消化必要</p>
+      )}
       <IncompleteTodos
         todos={incompleteTodos}
         onClickComplete={onClickComplete}
         onClickDelete={onClickDelete}
+        disabled={incompleteTodos.lenght >= 5}
       />
       <Completetodos todos={completeTodos} onClickBack={onClickBack} />
     </>
