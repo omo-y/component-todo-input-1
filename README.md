@@ -1,2 +1,2 @@
-# component-todo-input-1
+# component-todo-input
 Created with CodeSandbox
